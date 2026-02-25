@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试HTML转PDF</title>
+    <style>
+        body {
+            font-family: 'Noto Sans CJK JP', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: white;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        .highlight {
+            background-color: #e8f4fc;
+            padding: 10px;
+            border-radius: 4px;
+            border-left: 4px solid #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MemoTime App 功能测试</h1>
+        <p class="highlight">这是一个用于测试HTML转PDF功能的本地页面。测试时间：2026年2月25日</p>
+        
+        <div class="section">
+            <h2>核心功能模块</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>模块名称</th>
+                        <th>功能描述</th>
+                        <th>技术实现</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>多源链接抓取</td>
+                        <td>捕获浏览器和移动端分享的链接</td>
+                        <td>Chrome扩展 + API接收端点</td>
+                    </tr>
+                    <tr>
+                        <td>智能分类引擎</td>
+                        <td>基于规则和AI模型的自动分类</td>
+                        <td>BERT微调 + 规则引擎</td>
+                    </tr>
+                    <tr>
+                        <td>格式转换管道</td>
+                        <td>将内容转换为PDF/PPT/Word格式</td>
+                        <td>Puppeteer + HTML转PDF</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>技术验证要点</h2>
+            <ol>
+                <li><strong>网页内容提取</strong>: 使用Readability算法提取核心内容</li>
+                <li><strong>PDF生成质量</strong>: 评估布局保真度和字体渲染</li>
+                <li><strong>转换性能</strong>: 测量处理时间和文件大小</li>
+                <li><strong>跨平台兼容性</strong>: 确保不同环境下的稳定性</li>
+            </ol>
+        </div>
+        
+        <div class="section">
+            <h2>预期结果</h2>
+            <ul>
+                <li>PDF文件生成成功，包含完整内容</li>
+                <li>布局与HTML原始设计基本一致</li>
+                <li>中文字符正确渲染无乱码</li>
+                <li>转换时间在合理范围内（<10秒）</li>
+            </ul>
+        </div>
+        
+        <footer>
+            <p>生成于 MemoTime App 技术验证阶段</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+[
+  {
+    "url_info": {
+      "url": "https://www.bbc.com/news/technology-68353330",
+      "name": "BBC新闻-科技",
+      "type": "新闻文章"
+    },
+    "playwright_fetch": {
+      "success": false,
+      "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.bbc.com/news/technology-68353330\", waiting until \"networkidle\"\n"
+    },
+    "content_extraction": null,
+    "pdfkit_conversion": null,
+    "playwright_conversion": null,
+    "evaluations": []
+  },
+  {
+    "url_info": {
+      "url": "https://medium.com/@alexdambra/five-essential-steps-for-data-science-projects-3e5d3c3a8c2a",
+      "name": "Medium技术博客",
+      "type": "技术文章"
+    },
+    "playwright_fetch": {
+      "success": false,
+      "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://medium.com/@alexdambra/five-essential-steps-for-data-science-projects-3e5d3c3a8c2a\", waiting until \"networkidle\"\n"
+    },
+    "content_extraction": null,
+    "pdfkit_conversion": null,
+    "playwright_conversion": null,
+    "evaluations": []
+  },
+  {
+    "url_info": {
+      "url": "https://github.com/microsoft/playwright-python",
+      "name": "GitHub仓库",
+      "type": "代码仓库"
+    },
+    "playwright_fetch": {
+      "success": false,
+      "error": "Page.goto: Page crashed\nCall log:\n  - navigating to \"https://github.com/microsoft/playwright-python\", waiting until \"networkidle\"\n"
+    },
+    "content_extraction": null,
+    "pdfkit_conversion": null,
+    "playwright_conversion": null,
+    "evaluations": []
+  }
+]

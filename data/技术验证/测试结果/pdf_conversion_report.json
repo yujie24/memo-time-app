@@ -1,0 +1,27 @@
+{
+  "test_date": "2026-02-25 12:35:17",
+  "environment": {
+    "wkhtmltopdf_available": true,
+    "pdfkit_available": true,
+    "network_accessible": false
+  },
+  "test_results": {
+    "basic_test": {
+      "success": true,
+      "conversion_time": 0.5443379878997803,
+      "file_size": 20350,
+      "output_path": "../../outputs/技术方案/测试结果/basic_test.pdf"
+    },
+    "local_html_test": {
+      "success": true,
+      "conversion_time": 0.5331730842590332,
+      "file_size": 59923,
+      "output_path": "../../outputs/技术方案/测试结果/local_html_test.pdf"
+    }
+  },
+  "summary": {
+    "total_tests": 2,
+    "success_count": 2,
+    "success_rate": 100.0
+  }
+}

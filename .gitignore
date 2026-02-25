@@ -1,0 +1,129 @@
+# Temporary directories
+temp/
+*.tmp
+*.temp
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Sensitive data
+*.key
+*.pem
+*.crt
+*.cer
+*.pfx
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.lock-wscript
+
+# Coverage
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+
+# Logs
+*.log
+logs/
+
+# System
+*.pid
+*.seed
+*.pid.lock
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Byte-compiled / optimized / DLL files
+*.pyc
+*.pyo
+*.pyd
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Project specific
+data/shared_state/state.db
+outputs/进展图/**/*.html
+
+# Ignore uploaded files (用户上传的临时文件)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.pdf
+*.pptx
+*.docx
+*.xlsx
+!appstore.png
+!outputs/设计/*.png
+!outputs/设计/*.jpg
+!outputs/设计/*.pdf
+!outputs/设计/*.pptx
+!outputs/设计/*.pptx.html
+# System memory files
+memory/
