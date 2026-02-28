@@ -1,0 +1,1266 @@
+classification:
+  ai_model:
+    confidence_threshold: 0.7
+    enabled: false
+    model_name: bert-classification-model
+  decision:
+    default_labels:
+    - general
+    fallback_to_ai: true
+    rule_engine_priority: true
+  rule_engine:
+    keyword_rules:
+      academic:
+      - 研究所
+      - research
+      - bibliography
+      - master
+      - academic
+      - dataset
+      - 基金
+      - confidence interval
+      - theory
+      - presentation
+      - 学术
+      - 硕士论文
+      - hypothesis
+      - study
+      - proceedings
+      - 会议
+      - publication
+      - citation
+      - data
+      - 实验
+      - conference
+      - 文献
+      - scholarly
+      - 同行评审
+      - appendix
+      - institute
+      - 发表
+      - graduate
+      - theoretical
+      - coauthor
+      - editor
+      - rejection
+      - discussion
+      - peer-reviewed
+      - quantitative
+      - arxiv
+      - empirical
+      - methodology
+      - phd
+      - 期刊
+      - discipline
+      - grant
+      - domain
+      - poster
+      - dissertation
+      - impact factor
+      - statistics
+      - journal
+      - 方法论
+      - 引用
+      - sponsor
+      - method
+      - field
+      - results
+      - citation count
+      - 博士论文
+      - submission
+      - refereed
+      - p-value
+      - 大学
+      - scholar
+      - introduction
+      - author
+      - code
+      - 研究
+      - seminar
+      - significance
+      - foundation
+      - footnote
+      - 科研
+      - conclusion
+      - 实验室
+      - literature
+      - 综述
+      - 作者
+      - review
+      - qualitative
+      - 论文
+      - 学术期刊
+      - proof
+      - reference
+      - specialization
+      - experiment
+      - 合作者
+      - paper
+      - affiliation
+      - thesis
+      - reviewer
+      - survey
+      - agency
+      - metrics
+      - talk
+      - university
+      - replication
+      - funding
+      - 科研经费
+      - abstract
+      - acceptance
+      - reproducibility
+      - workshop
+      - h-index
+      ai:
+      - ai
+      - fine-tuning
+      - algorithm
+      - 深度学习
+      - data science
+      - claude
+      - llm
+      - PyTorch
+      - training
+      - robotics
+      - large language model
+      - object detection
+      - TensorFlow
+      - prompt engineering
+      - ChatGPT
+      - k-means
+      - big data
+      - chatgpt
+      - AI
+      - classification
+      - 模型训练
+      - pandas
+      - text analysis
+      - policy gradient
+      - inference
+      - dall-e
+      - 神经网络
+      - 自然语言处理
+      - natural language processing
+      - activation
+      - knn
+      - 数据分析
+      - 生成式AI
+      - bert
+      - openai
+      - tensorflow
+      - transfer learning
+      - bias
+      - analytics
+      - data mining
+      - deep learning
+      - autonomous
+      - neural network
+      - ethics
+      - 大语言模型
+      - layer
+      - optimization
+      - q-learning
+      - generative ai
+      - 自动驾驶
+      - supervised learning
+      - automation
+      - sentiment analysis
+      - semi-supervised
+      - backpropagation
+      - pca
+      - computer vision
+      - gpt
+      - 推理
+      - regression
+      - fairness
+      - model
+      - support vector machine
+      - keras
+      - svm
+      - pytorch
+      - transparency
+      - anthropic
+      - 机器人
+      - 计算机视觉
+      - network
+      - attention mechanism
+      - nlp
+      - 智能系统
+      - machine learning
+      - scikit-learn
+      - unsupervised learning
+      - reinforcement learning
+      - 数据科学
+      - segmentation
+      - 人工智能
+      - 优化
+      - explainability
+      - self-driving
+      - artificial intelligence
+      - 机器学习
+      - rl
+      - gpt-3
+      - numpy
+      - drone
+      - 认知计算
+      - GPT
+      - stable diffusion
+      - image recognition
+      - midjourney
+      - clustering
+      - neural
+      - gpt-4
+      - 算法
+      - predictive modeling
+      - random forest
+      - decision tree
+      - transformer
+      business:
+      - consumer
+      - scaling
+      - training
+      - audit
+      - roadmap
+      - marketing
+      - planning
+      - 规划
+      - csr
+      - 领导力
+      - 愿景
+      - organization
+      - income
+      - competitive advantage
+      - 用户
+      - audience
+      - 品牌
+      - 管理
+      - growth
+      - acquisition
+      - revenue
+      - insurance
+      - 初创公司
+      - product
+      - research and development
+      - 产品
+      - mitigation
+      - founder
+      - 企业家
+      - m&a
+      - venture capital
+      - vision
+      - corporation
+      - service
+      - leadership
+      - 客户
+      - cto
+      - business
+      - manufacturing
+      - logistics
+      - 市场份额
+      - market
+      - capital
+      - ceo
+      - hr
+      - 公司
+      - brand
+      - 市场
+      - finance
+      - 营销
+      - 使命
+      - r&d
+      - margin
+      - cfo
+      - 投资
+      - scale
+      - niche
+      - globalization
+      - 企业
+      - human resources
+      - solution
+      - strategy
+      - vertical
+      - corporate social responsibility
+      - industry
+      - innovation
+      - company
+      - user
+      - sustainability
+      - 创业
+      - client
+      - 销售
+      - offering
+      - competitor
+      - 创始人
+      - sector
+      - supply chain
+      - risk
+      - management
+      - operations
+      - market share
+      - enterprise
+      - expansion
+      - alliance
+      - recruitment
+      - mission
+      - 融资
+      - 利润
+      - 竞争
+      - compliance
+      - 行业
+      - investment
+      - advertising
+      - merger
+      - vc
+      - accounting
+      - tax
+      - 服务
+      - sales
+      - venture
+      - talent
+      - partnership
+      - entrepreneur
+      - earnings
+      - funding
+      - promotion
+      - 风投
+      - executive
+      - profit
+      - startup
+      - customer
+      - 收入
+      - portfolio
+      - patent
+      - competition
+      - 战略
+      - 商业
+      education:
+      - special education
+      - 课本
+      - engagement
+      - diploma
+      - competency
+      - training
+      - tutorial
+      - massive open online course
+      - instruction
+      - homework
+      - 学术
+      - instructor
+      - handbook
+      - primary
+      - pedagogy
+      - 公开课
+      - degree
+      - creativity
+      - 资源
+      - assignment
+      - teacher
+      - 教师
+      - 老师
+      - 作业
+      - institute
+      - lecture
+      - graduate
+      - 教学
+      - assessment
+      - 慕课
+      - evaluation
+      - student
+      - accessibility
+      - distance learning
+      - 教材
+      - 评估
+      - discussion
+      - 远程学习
+      - project
+      - exercise
+      - technical
+      - quiz
+      - class
+      - 培训
+      - career
+      - curriculum
+      - 课程
+      - lesson plan
+      - material
+      - course
+      - practice
+      - academy
+      - syllabus
+      - 在线教育
+      - resource
+      - pupil
+      - 练习
+      - development
+      - teaching
+      - forum
+      - 大学
+      - textbook
+      - employment
+      - learning
+      - step-by-step
+      - seminar
+      - problem solving
+      - critical thinking
+      - 学校
+      - 教程
+      - college
+      - proficiency
+      - 项目
+      - skills
+      - online
+      - 学院
+      - 能力
+      - exam
+      - how-to
+      - literacy
+      - graduation
+      - reference
+      - 测验
+      - commencement
+      - andragogy
+      - certificate
+      - manual
+      - interactive
+      - education
+      - early childhood
+      - secondary
+      - 考试
+      - accommodation
+      - school
+      - job readiness
+      - test
+      - inclusive
+      - 指南
+      - university
+      - 课堂
+      - mooc
+      - 技能
+      - learner
+      - higher education
+      - 学习
+      - e-learning
+      - 学生
+      - guide
+      - educational
+      - numeracy
+      - vocational
+      - 教育
+      - workshop
+      - participation
+      finance:
+      - research
+      - investing
+      - oversight
+      - financial technology
+      - wealth
+      - gdp
+      - 金融
+      - 基金
+      - audit
+      - 会计
+      - 债券
+      - 分析
+      - 理财
+      - analyst
+      - 养老金
+      - 401k
+      - 退休金
+      - forecast
+      - income
+      - crypto
+      - 债务
+      - 股市
+      - cash flow
+      - fx
+      - 现金流
+      - 预算
+      - insurance
+      - financial
+      - 抵押
+      - stock market
+      - fixed income
+      - 加密货币
+      - unemployment
+      - inflation
+      - digital banking
+      - mobile payment
+      - balance sheet
+      - currency
+      - rent
+      - regulation
+      - share
+      - bitcoin
+      - asset
+      - social security
+      - report
+      - budget
+      - property
+      - 财务
+      - 分析师
+      - 银行
+      - capital
+      - claim
+      - banking
+      - debt
+      - policy
+      - finance
+      - 研究报告
+      - maturity
+      - 投资
+      - retirement
+      - trader
+      - 贷款
+      - apr
+      - interest
+      - yield
+      - stocks
+      - fintech
+      - premium
+      - budgeting
+      - analysis
+      - coverage
+      - economy
+      - money
+      - 保险
+      - taxation
+      - accountant
+      - irs
+      - refund
+      - ethereum
+      - real estate
+      - forex
+      - compliance
+      - investment
+      - bonds
+      - treasury
+      - accounting
+      - tax
+      - bank
+      - cryptocurrency
+      - loan
+      - finra
+      - blockchain
+      - deduction
+      - sec
+      - rate
+      - equity
+      - investor
+      - trading
+      - expense
+      - credit
+      - 交易
+      - 比特币
+      - 股票
+      - 区块链
+      - 外汇
+      - economics
+      - 税务
+      - mortgage
+      - pension
+      - portfolio
+      - lease
+      - dividend
+      - ira
+      - 证券
+      - bookkeeping
+      health:
+      - affordable care
+      - research
+      - longevity
+      - medicare
+      - training
+      - infection
+      - 医师
+      - 锻炼
+      - wellness
+      - pandemic
+      - 疾病
+      - condition
+      - study
+      - wearable
+      - immunization
+      - 症状
+      - disease
+      - public health
+      - 免疫
+      - calorie
+      - telemedicine
+      - 医学
+      - data
+      - hospital
+      - diagnosis
+      - insurance
+      - nurse
+      - 病症
+      - healthcare
+      - 健康
+      - diet
+      - fitness
+      - nutrition
+      - exercise
+      - medicine
+      - senior
+      - 保健
+      - regulation
+      - vaccine
+      - outbreak
+      - device
+      - 医院
+      - practice
+      - 健身
+      - treatment
+      - 膳食
+      - elderly
+      - workout
+      - clinical trial
+      - newborn
+      - counseling
+      - 饮食
+      - doctor
+      - symptom
+      - mental health
+      - psychology
+      - epidemiology
+      - 心理治疗
+      - 诊断
+      - fda
+      - child
+      - medication
+      - children
+      - 医疗
+      - 治疗
+      - food
+      - specialist
+      - infant
+      - prescription
+      - coverage
+      - approval
+      - 医生
+      - 疫苗
+      - technology
+      - safety
+      - screening
+      - facility
+      - center
+      - 运动
+      - 心理健康
+      - evidence
+      - aging
+      - surgeon
+      - geriatric
+      - digital health
+      - clinic
+      - prevention
+      - compliance
+      - wellbeing
+      - 预防
+      - 筛查
+      - medical
+      - health
+      - drug
+      - 营养
+      - medicaid
+      - 疗法
+      - therapy
+      - pediatric
+      - illness
+      - 护士
+      - protection
+      - 药物
+      - physical
+      - 公共卫生
+      - 诊所
+      - physician
+      - 处方
+      - protein
+      news:
+      - bloomberg
+      - latest
+      - 体育新闻
+      - 最新
+      - television
+      - 专题报道
+      - 文章
+      - exclusive
+      - olympics
+      - 科技新闻
+      - pandemic
+      - celebrity
+      - disease
+      - entertainment
+      - movie
+      - tech
+      - journalist
+      - interview
+      - 报社
+      - 记者
+      - local
+      - basketball
+      - 娱乐新闻
+      - environment
+      - bbc
+      - newspaper
+      - baseball
+      - the guardian
+      - media
+      - editor
+      - government
+      - football
+      - 本地新闻
+      - 网络新闻
+      - trade
+      - film
+      - global
+      - election
+      - sports
+      - announcement
+      - portal
+      - business
+      - report
+      - reporter
+      - market
+      - 时事
+      - 政治新闻
+      - 经济新闻
+      - policy
+      - finance
+      - ap
+      - correspondent
+      - news
+      - statement
+      - 头条
+      - magazine
+      - global warming
+      - national
+      - tv
+      - headline
+      - vote
+      - covid
+      - international
+      - morning
+      - cnn
+      - 媒体
+      - 新闻
+      - innovation
+      - associated press
+      - broadcast
+      - website
+      - coverage
+      - article
+      - current events
+      - economy
+      - technology
+      - columnist
+      - 广播
+      - online
+      - today
+      - 报道
+      - music
+      - reuters
+      - 国内新闻
+      - science
+      - politics
+      - evening
+      - climate
+      - 电视台
+      - investigation
+      - platform
+      - 国际新闻
+      - expose
+      - declaration
+      - medical
+      - health
+      - world
+      - digital
+      - update
+      - reveal
+      - 编辑
+      - breaking
+      - startup
+      - press
+      - leak
+      science:
+      - responsible
+      - 材料
+      - research
+      - sociology
+      - 心理学
+      - peer review
+      - math
+      - cosmos
+      - 工程
+      - genetics
+      - relativity
+      - interdisciplinary
+      - theory
+      - 分析
+      - 天文
+      - brain
+      - anthropology
+      - biology
+      - disease
+      - geology
+      - 医学
+      - publication
+      - 实验
+      - data
+      - 技术
+      - conference
+      - 证据
+      - 生物
+      - scientific
+      - reaction
+      - institute
+      - 神经科学
+      - environment
+      - philosophy
+      - tool
+      - student
+      - 环境
+      - 健康
+      - engineering
+      - behavior
+      - inorganic
+      - evolution
+      - medicine
+      - particle
+      - discovery
+      - regulation
+      - chemistry
+      - device
+      - 生态
+      - chemical
+      - dna
+      - ethics
+      - planet
+      - grant
+      - treatment
+      - 行为
+      - quantum
+      - statistics
+      - policy
+      - journal
+      - simulation
+      - sponsor
+      - psychology
+      - 认知
+      - 数学
+      - teaching
+      - ecology
+      - earth
+      - 电子
+      - astronomy
+      - cognitive
+      - model
+      - algebra
+      - learning
+      - 地理
+      - innovation
+      - 理论
+      - analysis
+      - 科研
+      - 土木
+      - history
+      - technology
+      - safety
+      - 化学
+      - atom
+      - civil
+      - molecule
+      - science
+      - organic
+      - cell
+      - climate
+      - experiment
+      - 大脑
+      - paper
+      - 物理
+      - mathematics
+      - education
+      - physics
+      - space
+      - 气候
+      - calculus
+      - medical
+      - health
+      - invention
+      - 科学
+      - star
+      - electrical
+      - funding
+      - laboratory
+      - professor
+      - 发现
+      - neuroscience
+      - 数据
+      - mechanical
+      - 机械
+      technology:
+      - 软件
+      - algorithm
+      - encryption
+      - 深度学习
+      - c++
+      - rest
+      - fullstack
+      - database
+      - Java
+      - python
+      - redis
+      - scrum
+      - android
+      - Python
+      - 技术
+      - microservices
+      - gitlab
+      - devops
+      - JavaScript
+      - kanban
+      - cloud
+      - programming
+      - kubernetes
+      - ssl
+      - version control
+      - 大数据
+      - rust
+      - 前端
+      - docker
+      - web
+      - tls
+      - api
+      - javascript
+      - azure
+      - engineer
+      - browser
+      - http
+      - oauth
+      - repo
+      - domain
+      - infrastructure
+      - testing
+      - go
+      - 数据结构
+      - c#
+      - unit test
+      - package
+      - software
+      - mobile
+      - repository
+      - development
+      - gcp
+      - qa
+      - ruby
+      - ios
+      - graphql
+      - ci/cd
+      - aws
+      - container
+      - java
+      - 全栈
+      - agile
+      - 程序员
+      - react native
+      - 后端
+      - 编程
+      - developer
+      - tdd
+      - hosting
+      - 工程师
+      - 开发
+      - project management
+      - mysql
+      - github
+      - library
+      - flutter
+      - DevOps
+      - 云计算
+      - 人工智能
+      - orchestration
+      - frontend
+      - 机器学习
+      - mongodb
+      - serverless
+      - integration test
+      - authentication
+      - data structure
+      - bitbucket
+      - swift
+      - module
+      - framework
+      - sql
+      - kotlin
+      - 数据库
+      - 区块链
+      - security
+      - nosql
+      - postgresql
+      - https
+      - 算法
+      - backend
+      - C++
+      - coding
+      - sprint
+      - 代码
+      - authorization
+      web_development:
+      - cors
+      - WordPress
+      - git
+      - fullstack
+      - database
+      - progressive web app
+      - dns
+      - SEO
+      - e-commerce
+      - drupal
+      - CSS
+      - scrum
+      - typescript
+      - 搜索引擎优化
+      - cdn
+      - JavaScript
+      - screen reader
+      - team
+      - 网页开发
+      - responsive
+      - ssl
+      - version control
+      - 响应式设计
+      - accessibility
+      - debugging
+      - metadata
+      - 性能优化
+      - search engine optimization
+      - web development
+      - pwa
+      - node.js
+      - 内容管理系统
+      - api
+      - javascript
+      - Vue
+      - svelte
+      - collaboration
+      - Node.js
+      - vue
+      - 用户界面
+      - payment
+      - TypeScript
+      - stripe
+      - webdev
+      - domain
+      - 电商
+      - testing
+      - HTML
+      - optimization
+      - 后端开发
+      - 全栈开发
+      - ci/cd
+      - devtools
+      - nestjs
+      - design
+      - cypress
+      - user interface
+      - csrf
+      - css
+      - Angular
+      - 用户体验
+      - firebase
+      - agile
+      - content management system
+      - performance
+      - seo
+      - React
+      - html
+      - cms
+      - angular
+      - deployment
+      - hosting
+      - 前端开发
+      - 安全
+      - lighthouse
+      - core web vitals
+      - project management
+      - react
+      - github
+      - 设计
+      - API
+      - wcag
+      - express
+      - ux
+      - wordpress
+      - mobile-first
+      - user experience
+      - frontend
+      - mongodb
+      - 购物车
+      - ecmascript
+      - cart
+      - framework
+      - sql
+      - Express
+      - security
+      - schema.org
+      - shop
+      - ui
+      - jest
+      - nosql
+      - https
+      - cloudflare
+      - backend
+      - server
+      - aria
+      - 网站
+      - a11y
+    matching_threshold: 1
+    scoring_method: binary
+    domain_rules:
+      bbc.com:
+      - news
+      bbc.co.uk:
+      - news
+      medium.com:
+      - technology
+      github.com:
+      - technology
+      - web_development
+      arxiv.org:
+      - academic
+      python.org:
+      - technology
+      - education
+      investopedia.com:
+      - finance
+      - education
+      nature.com:
+      - science
+      - academic
+      stackoverflow.com:
+      - technology
+      - education
+      w3schools.com:
+      - web_development
+      - education
+      towardsdatascience.com:
+      - ai
+      - technology
+      cnn.com:
+      - news
+      reuters.com:
+      - news
+      techcrunch.com:
+      - technology
+      - business
+      forbes.com:
+      - business
+      - finance
+      wsj.com:
+      - business
+      - finance
+      bloomberg.com:
+      - finance
+      - business
+      youtube.com:
+      - education
+      ted.com:
+      - education
+      wikipedia.org:
+      - education
+      apple.com:
+      - technology
+      - business
+      microsoft.com:
+      - technology
+      - business
+      google.com:
+      - technology
+      - business
+  strategy: hybrid
+content_extraction:
+  engine: readability
+  language_detection:
+    enabled: true
+    supported_languages:
+    - en
+    - zh
+  readability:
+    negative_keywords:
+    - comment
+    - footer
+    - sidebar
+    - advertisement
+    positive_keywords: []
+    url: null
+  text_processing:
+    max_text_length: 100000
+    min_text_length: 100
+    preserve_line_breaks: true
+    remove_extra_whitespace: true
+debug:
+  enabled: false
+  intermediate_files_dir: temp/link_processing_debug
+  save_intermediate_files: true
+file_saving:
+  default_format: pdf
+  metadata:
+    enabled: true
+    fields:
+    - url
+    - title
+    - categories
+    - extracted_date
+    - source
+    format: json
+  storage:
+    base_directory: outputs/link_processing
+    organization_strategy: by_category_date
+  supported_formats:
+  - pdf
+  - docx
+  - pptx
+  - md
+  - html
+monitoring:
+  logging:
+    file_path: logs/link_processing.log
+    level: INFO
+    retention_days: 7
+    rotation: daily
+  performance_thresholds:
+    conversion_timeout_seconds: 60
+    extraction_timeout_seconds: 10
+    fetch_timeout_seconds: 30
+    max_memory_mb: 512
+pdf_generation:
+  output:
+    directory: outputs/link_processing/converted
+    filename_template: '{timestamp}_{slug}.pdf'
+    naming_strategy: timestamp_title
+    timestamp_format: '%Y%m%d_%H%M%S'
+  pdfkit:
+    options:
+      enable-local-file-access: true
+      encoding: UTF-8
+      margin-bottom: 0.75in
+      margin-left: 0.75in
+      margin-right: 0.75in
+      margin-top: 0.75in
+      no-outline: true
+      page-size: A4
+  playwright:
+    format: A4
+  preferred_engine: pdfkit
+proxy:
+  enabled: false
+  http_proxy: null
+  https_proxy: null
+web_capture:
+  headless: true
+  retry:
+    backoff_factor: 1.5
+    delay_seconds: 2
+    max_attempts: 3
+  timeout_ms: 30000
+  user_agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+  wait_until: networkidle
