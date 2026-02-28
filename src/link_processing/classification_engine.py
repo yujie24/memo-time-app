@@ -73,6 +73,10 @@ class RuleEngine:
         self.matching_threshold = self.config.get("matching_threshold", 1)
         self.scoring_method = self.config.get("scoring_method", "binary")
         
+        # 域名规则权重
+        self.domain_rule_weight = self.config.get("domain_rule_weight", 3)
+        logger.info(f"域名规则权重设置为: {self.domain_rule_weight}")
+        
         # 构建反向索引以提高匹配速度
         # 默认域名规则库
         self.default_domain_rules = {
@@ -84,7 +88,7 @@ class RuleEngine:
             "python.org": ["technology", "education"],
             "investopedia.com": ["finance", "education"],
             "nature.com": ["science", "academic"],
-            "stackoverflow.com": ["technology", "education"],
+            "stackoverflow.com": ["technology", "education", "programming"],
             "w3schools.com": ["web_development", "education"],
             "towardsdatascience.com": ["ai", "technology"],
             "cnn.com": ["news"],
@@ -116,6 +120,7 @@ class RuleEngine:
         """从URL中提取域名（简化版本）"""
         import re
         # 移除协议部分
+        original_url = url
         url = re.sub(r'^https?://', '', url)
         # 移除路径部分
         url = re.sub(r'/.*$', '', url)
@@ -124,7 +129,9 @@ class RuleEngine:
         # 移除www前缀
         if url.startswith('www.'):
             url = url[4:]
-        return url.lower()
+        extracted = url.lower()
+        logger.debug(f"域名提取: '{original_url}' -> '{extracted}'")
+        return extracted
     
     def _build_reverse_index(self):
         """构建关键词到类别的反向索引"""
@@ -159,9 +166,9 @@ class RuleEngine:
                 for rule_domain, categories in self.domain_rules.items():
                     if rule_domain in domain or domain.endswith('.' + rule_domain):
                         for category in categories:
-                            # 域名规则给予较高权重（score=2）
-                            category_scores[category] = category_scores.get(category, 0) + 2
-                            logger.debug(f"域名规则匹配: {rule_domain} -> {category}")
+                            # 域名规则给予较高权重
+                            category_scores[category] = category_scores.get(category, 0) + self.domain_rule_weight
+                            logger.debug(f"域名规则匹配: {rule_domain} -> {category}, 权重+{self.domain_rule_weight}, 当前得分: {category_scores.get(category, 0)}")
             
             # 方法1：直接关键词匹配
             for category, keywords in self.keyword_rules.items():
@@ -171,6 +178,7 @@ class RuleEngine:
                     pattern = r'\b' + re.escape(keyword) + r'\b'
                     matches = re.findall(pattern, text_lower)
                     if matches:
+                        logger.debug(f"关键词匹配: 类别={category}, 关键词='{keyword}', 匹配次数={len(matches)}")
                         if self.scoring_method == "binary":
                             score = 1
                             break  # 匹配到即给分
@@ -190,6 +198,7 @@ class RuleEngine:
             # 过滤低于阈值的分类
             filtered_categories = []
             for category, score in category_scores.items():
+                logger.debug(f"类别得分: 类别={category}, 得分={score}, 阈值={self.matching_threshold}, 是否通过={score >= self.matching_threshold}")
                 if score >= self.matching_threshold:
                     filtered_categories.append(category)
             

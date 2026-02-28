@@ -9,6 +9,167 @@ classification:
     fallback_to_ai: true
     rule_engine_priority: true
   rule_engine:
+    domain_rule_weight: 5
+    domain_rules:
+      apple.com:
+      - technology
+      - business
+      arxiv.org:
+      - ai
+      - academic
+      - research
+      bbc.co.uk:
+      - news
+      bbc.com:
+      - ai
+      - news
+      - technology
+      bloomberg.com:
+      - business
+      - finance
+      cnn.com:
+      - news
+      dev.mysql.com:
+      - database
+      - documentation
+      - technology
+      developer.mozilla.org:
+      - documentation
+      - education
+      - web_development
+      docs.docker.com:
+      - devops
+      - technology
+      - documentation
+      docs.python.org:
+      - technology
+      - programming
+      - education
+      - documentation
+      en.wikipedia.org:
+      - ai
+      - reference
+      - education
+      forbes.com:
+      - business
+      - finance
+      git-scm.com:
+      - technology
+      - education
+      - documentation
+      github.com:
+      - technology
+      - web_development
+      - programming
+      gnu.org:
+      - technology
+      - education
+      - documentation
+      google.com:
+      - technology
+      - business
+      httpd.apache.org:
+      - technology
+      - web_development
+      - documentation
+      investopedia.com:
+      - education
+      - finance
+      jupyter.org:
+      - technology
+      - education
+      - data-science
+      kubernetes.io:
+      - devops
+      - technology
+      - documentation
+      linkedin.com:
+      - business
+      - professional
+      - strategy
+      medium.com:
+      - ai
+      - technology
+      - data-science
+      microsoft.com:
+      - technology
+      - business
+      mongodb.com:
+      - database
+      - documentation
+      - technology
+      nature.com:
+      - science
+      - academic
+      - research
+      news.ycombinator.com:
+      - news
+      - technology
+      - programming
+      nginx.org:
+      - technology
+      - web_development
+      - documentation
+      npmjs.com:
+      - technology
+      - web_development
+      - programming
+      postgresql.org:
+      - database
+      - documentation
+      - technology
+      pypi.org:
+      - technology
+      - programming
+      - data-science
+      python.org:
+      - technology
+      - education
+      quora.com:
+      - ai
+      - q&a
+      - education
+      reddit.com:
+      - social
+      - technology
+      - programming
+      redis.io:
+      - database
+      - documentation
+      - technology
+      reuters.com:
+      - news
+      stackoverflow.com:
+      - technology
+      - q&a
+      - education
+      - programming
+      techcrunch.com:
+      - business
+      - news
+      - technology
+      ted.com:
+      - education
+      towardsdatascience.com:
+      - ai
+      - technology
+      - machine-learning
+      - data-science
+      twitter.com:
+      - ai
+      - news
+      - social
+      w3schools.com:
+      - education
+      - web_development
+      - tutorial
+      wikipedia.org:
+      - education
+      wsj.com:
+      - business
+      - finance
+      youtube.com:
+      - education
     keyword_rules:
       academic:
       - 研究所
@@ -334,6 +495,149 @@ classification:
       - competition
       - 战略
       - 商业
+      data-science:
+      - data science
+      - 数据科学
+      - 数据分析
+      - data analysis
+      - 数据挖掘
+      - data mining
+      - 统计学
+      - statistics
+      - 数据可视化
+      - data visualization
+      - 大数据
+      - big data
+      - 数据工程
+      - data engineering
+      - 数据仓库
+      - data warehouse
+      - ETL
+      - 特征工程
+      - feature engineering
+      - 机器学习
+      - machine learning
+      - 深度学习
+      - deep learning
+      - Python
+      - R语言
+      - SQL
+      - Pandas
+      - NumPy
+      - SciPy
+      - Scikit-learn
+      - TensorFlow
+      - PyTorch
+      - Jupyter
+      - Notebook
+      - 数据科学家
+      - data scientist
+      - 数据平台
+      database:
+      - database
+      - 数据库
+      - SQL
+      - NoSQL
+      - PostgreSQL
+      - MySQL
+      - MongoDB
+      - Redis
+      - Oracle
+      - SQLite
+      - Cassandra
+      - Elasticsearch
+      - Neo4j
+      - 数据存储
+      - 数据管理
+      - 数据仓库
+      - 数据湖
+      - DBMS
+      - 关系型数据库
+      - 非关系型数据库
+      - 分布式数据库
+      - 内存数据库
+      - 时序数据库
+      - 图数据库
+      - 索引
+      - 查询
+      - 事务
+      - 备份
+      - 恢复
+      - 复制
+      - 分片
+      - 集群
+      devops:
+      - DevOps
+      - 运维
+      - operations
+      - 部署
+      - deployment
+      - 持续集成
+      - continuous integration
+      - 持续交付
+      - continuous delivery
+      - 容器化
+      - containerization
+      - Docker
+      - Kubernetes
+      - K8s
+      - 监控
+      - monitoring
+      - 日志
+      - logging
+      - 自动化
+      - automation
+      - 基础设施即代码
+      - infrastructure as code
+      - 云原生
+      - cloud native
+      - 微服务
+      - microservices
+      - 服务网格
+      - service mesh
+      - CI/CD
+      - 流水线
+      - pipeline
+      - 配置管理
+      - configuration management
+      - Ansible
+      - Terraform
+      - Jenkins
+      - GitLab CI
+      - GitHub Actions
+      - 云服务
+      - cloud services
+      - 可观测性
+      - observability
+      - 性能优化
+      - performance optimization
+      documentation:
+      - documentation
+      - 文档
+      - docs
+      - reference
+      - 手册
+      - guide
+      - tutorial
+      - api reference
+      - 开发文档
+      - 技术文档
+      - 用户手册
+      - 安装指南
+      - 使用说明
+      - 配置指南
+      - 故障排除
+      - 常见问题
+      - FAQ
+      - 帮助文档
+      - 在线帮助
+      - 参考手册
+      - 说明书
+      - 白皮书
+      - 蓝皮书
+      - 规范文档
+      - 标准文档
+      - 协议文档
       education:
       - special education
       - 课本
@@ -675,6 +979,27 @@ classification:
       - physician
       - 处方
       - protein
+      machine-learning:
+      - machine learning
+      - 机器学习
+      - 监督学习
+      - unsupervised learning
+      - regression
+      - classification
+      - clustering
+      - neural network
+      - deep learning
+      - reinforcement learning
+      - supervised learning
+      - decision tree
+      - random forest
+      - svm
+      - support vector machine
+      - knn
+      - k-means
+      - gradient boosting
+      - xgboost
+      - lightgbm
       news:
       - bloomberg
       - latest
@@ -781,6 +1106,127 @@ classification:
       - startup
       - press
       - leak
+      professional:
+      - professional
+      - 职业
+      - 职场
+      - career
+      - employment
+      - job
+      - occupation
+      - vocation
+      - professional development
+      - 职业发展
+      - 职业技能
+      - professional skills
+      - 职场素养
+      - 职场礼仪
+      - 职业规划
+      - career planning
+      - professional network
+      - 职业网络
+      programming:
+      - 编程
+      - programming
+      - 代码
+      - code
+      - 开发
+      - development
+      - 软件工程
+      - software engineering
+      - 算法
+      - algorithm
+      - 数据结构
+      - data structure
+      - 编译器
+      - compiler
+      - 调试
+      - debugging
+      - 版本控制
+      - version control
+      - Git
+      - IDE
+      - 集成开发环境
+      - 框架
+      - framework
+      - 库
+      - library
+      - API
+      - 接口
+      - 面向对象
+      - object-oriented
+      - 函数式编程
+      - functional programming
+      - 并发
+      - concurrency
+      - 多线程
+      - multithreading
+      - 代码审查
+      - code review
+      - 重构
+      - refactoring
+      - 单元测试
+      - unit testing
+      - 集成测试
+      - integration testing
+      - 敏捷开发
+      - agile development
+      q&a:
+      - q&a
+      - 问答
+      - question and answer
+      - FAQ
+      - 常见问题
+      - ask
+      - answer
+      - community question
+      - discussion
+      - forum
+      - 答疑
+      - 问题解答
+      - technical support
+      - help desk
+      - knowledge base
+      - Q&A平台
+      reference:
+      - reference
+      - 参考
+      - 参考资料
+      - 参考手册
+      - 文档资料
+      - 引用
+      - bibliography
+      - 文献
+      - 资料来源
+      - 引用文献
+      - 参考书目
+      research:
+      - research
+      - 研究
+      - 学术研究
+      - 科学研究
+      - 实验
+      - 调查
+      - 论文
+      - 学术论文
+      - 期刊文章
+      - 会议论文
+      - 预印本
+      - 文献综述
+      - 方法论
+      - 数据分析
+      - 结果
+      - 讨论
+      - 结论
+      - 引用
+      - 参考文献
+      - 同行评审
+      - 基金项目
+      - 合作研究
+      - 跨学科研究
+      - 基础研究
+      - 应用研究
+      - 临床研究
       science:
       - responsible
       - 材料
@@ -897,6 +1343,47 @@ classification:
       - 数据
       - mechanical
       - 机械
+      social:
+      - social
+      - 社交
+      - social media
+      - 社交媒体
+      - community
+      - 社群
+      - network
+      - 社交网络
+      - interaction
+      - 互动
+      - engagement
+      - 参与
+      - twitter
+      - facebook
+      - linkedin
+      - reddit
+      - discord
+      - slack
+      - social platform
+      - online community
+      - 用户生成内容
+      - UGC
+      strategy:
+      - strategy
+      - 策略
+      - 战略
+      - strategic planning
+      - 战略规划
+      - business strategy
+      - 商业策略
+      - competitive strategy
+      - 竞争策略
+      - marketing strategy
+      - 营销策略
+      - corporate strategy
+      - 公司战略
+      - growth strategy
+      - 增长策略
+      - 战略管理
+      - strategic management
       technology:
       - 软件
       - algorithm
@@ -1004,6 +1491,22 @@ classification:
       - sprint
       - 代码
       - authorization
+      tutorial:
+      - tutorial
+      - 教程
+      - guide
+      - 指南
+      - how-to
+      - step-by-step
+      - walkthrough
+      - 入门指南
+      - 初学者教程
+      - 教学视频
+      - 学习路径
+      - 实践指导
+      - 操作手册
+      - 实例演示
+      - 案例教学
       web_development:
       - cors
       - WordPress
@@ -1114,68 +1617,7 @@ classification:
       - 网站
       - a11y
     matching_threshold: 1
-    scoring_method: binary
-    domain_rules:
-      bbc.com:
-      - news
-      bbc.co.uk:
-      - news
-      medium.com:
-      - technology
-      github.com:
-      - technology
-      - web_development
-      arxiv.org:
-      - academic
-      python.org:
-      - technology
-      - education
-      investopedia.com:
-      - finance
-      - education
-      nature.com:
-      - science
-      - academic
-      stackoverflow.com:
-      - technology
-      - education
-      w3schools.com:
-      - web_development
-      - education
-      towardsdatascience.com:
-      - ai
-      - technology
-      cnn.com:
-      - news
-      reuters.com:
-      - news
-      techcrunch.com:
-      - technology
-      - business
-      forbes.com:
-      - business
-      - finance
-      wsj.com:
-      - business
-      - finance
-      bloomberg.com:
-      - finance
-      - business
-      youtube.com:
-      - education
-      ted.com:
-      - education
-      wikipedia.org:
-      - education
-      apple.com:
-      - technology
-      - business
-      microsoft.com:
-      - technology
-      - business
-      google.com:
-      - technology
-      - business
+    scoring_method: weighted
   strategy: hybrid
 content_extraction:
   engine: readability
@@ -1262,5 +1704,6 @@ web_capture:
     delay_seconds: 2
     max_attempts: 3
   timeout_ms: 30000
-  user_agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+  user_agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML,
+    like Gecko) Chrome/120.0.0.0 Safari/537.36
   wait_until: networkidle
